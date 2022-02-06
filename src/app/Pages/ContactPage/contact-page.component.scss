@@ -1,0 +1,16 @@
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(29, 28, 28);
+  margin-bottom: 30px;
+
+  img {
+    width: 20px;
+    margin-left: 5px;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}

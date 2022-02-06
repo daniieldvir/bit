@@ -1,0 +1,21 @@
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .details {
+    text-align: center;
+    h1 {
+      font-size: 30px;
+    }
+    img {
+      width: 70px;
+    }
+  }
+  .back-btn {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}

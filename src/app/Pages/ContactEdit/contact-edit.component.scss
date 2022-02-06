@@ -1,0 +1,63 @@
+.edit-contact {
+  height: 400px;
+  width: 450px;
+  position: fixed;
+  inset: 0;
+  top: -10%;
+  margin: auto;
+  background-color: rgb(250, 252, 250);
+  border: rgb(59, 59, 59) 3px solid;
+  box-shadow: -3px 1px 28px #00000061;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .back-btn {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin: 5px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.564);
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    padding: 0;
+    color: rgba(128, 128, 128, 0.564);
+    cursor: pointer;
+  }
+
+  .back-btn:hover {
+    border: 1px solid black;
+    color: black;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-top: 1em;
+    }
+
+    input {
+      width: 200px;
+    }
+
+    .save-btn {
+      display: block;
+      margin: 20px auto;
+
+      border-radius: 5px;
+      border: 1px solid rgba(128, 128, 128, 0.927);
+      background-color: white;
+
+      color: rgba(128, 128, 128, 0.927);
+      cursor: pointer;
+    }
+    .save-btn:hover {
+      border: 1px solid green;
+      color: green;
+    }
+  }
+}

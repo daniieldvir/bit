@@ -1,0 +1,8 @@
+<section (click)="onSelectedContacts()" class="contact-preview">
+  <p>{{ contact.name }}</p>
+  <img src="https://robohash.org/{{ contact.name }}?set=set4" alt="" />
+  <section class="pre-btn" (click)="$event.stopPropagation()">
+    <a [routerLink]="['edit', contact._id]">✍🏻</a>
+    <button class="delete-btn" (click)="onDelete.emit(contact._id)">X</button>
+  </section>
+</section>

@@ -1,0 +1,17 @@
+<section class="edit-contact">
+  <button class="back-btn" (click)="onBack()">x</button>
+
+  <h1>Add Contact</h1>
+  <form *ngIf="contact" (ngSubmit)="onSaveContact()">
+    <label for="name">Name</label>
+    <input [(ngModel)]="contact.name" type="text" name="name" id="name" />
+
+    <label for="phone">Phone</label>
+    <input [(ngModel)]="contact.phone" type="text" name="phone" id="phone" />
+
+    <label for="email">Email</label>
+    <input [(ngModel)]="contact.email" type="text" name="email" id="email" />
+
+    <button class="save-btn">Save</button>
+  </form>
+</section>

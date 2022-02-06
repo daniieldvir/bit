@@ -1,0 +1,14 @@
+<section class="home-page">
+  <h1>
+    Hello <span>{{ user.name }}</span>
+  </h1>
+
+  <section class="loggedin-user">
+    <p><img src="./assets/img/coins.png" />Coins: {{ user.coins }}$</p>
+    <p><img src="./assets/img/bitcoin.png" />BTC:{{ btc }}</p>
+  </section>
+
+  <moves-list [user]="user"></moves-list>
+
+  <router-outlet></router-outlet>
+</section>

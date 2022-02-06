@@ -1,0 +1,15 @@
+<section class="contact-details" *ngIf="contact">
+  <section class="details">
+    <h1>Contact Details</h1>
+    <p>{{ contact.name }}</p>
+    <p>{{ contact.phone }}</p>
+    <p>{{ contact.email }}</p>
+    <img src="https://robohash.org/{{ contact.name }}?set=set4" alt="" />
+  </section>
+
+  <transfer-fund [contact]="contact"></transfer-fund>
+
+  <moves-list [contact]="contact" [user]="user"></moves-list>
+
+  <button class="back-btn" (click)="onBack()">⬅️</button>
+</section>

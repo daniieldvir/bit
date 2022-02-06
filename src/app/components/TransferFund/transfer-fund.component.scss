@@ -1,0 +1,56 @@
+form {
+  margin: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(36, 35, 35, 0.626);
+    margin-bottom: 10px;
+  }
+
+  input[type="text"]::placeholder {
+    padding-left: 10px;
+  }
+
+  button {
+    border-radius: 5px;
+    border: 1px solid rgba(36, 35, 35, 0.626);
+    background-color: white;
+    height: 25px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    color: rgba(36, 35, 35, 0.626);
+    cursor: pointer;
+  }
+
+  button:hover {
+    border: 1px solid green;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  form {
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+      label {
+        margin: 10px;
+      }
+    }
+  }
+}

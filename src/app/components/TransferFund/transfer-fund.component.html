@@ -1,0 +1,16 @@
+<section>
+  <form className="transfer-fund">
+    <div>
+      <label>How many coins to move: </label>
+      <input
+        [(ngModel)]="amount"
+        name="amount"
+        id="amount"
+        type="number"
+        min="0"
+      />
+    </div>
+
+    <button (click)="onTransferCoins()">Send</button>
+  </form>
+</section>

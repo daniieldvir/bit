@@ -1,0 +1,24 @@
+<section class="app-container">
+  <header class="container">
+    <h1 class="logo">BIT<span>Coin</span></h1>
+
+    <nav>
+      <a routerLink="signup" routerLinkActive="active">Signup</a>
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+
+      <a routerLink="contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- <home-page></home-page> -->
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="container">ContentRights &copy;</footer>
+</section>

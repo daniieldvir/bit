@@ -1,0 +1,14 @@
+<section>
+  <contact-filter (onFilter)="onFilter($event)"></contact-filter>
+  <a routerLink="edit"
+    >Add Contact
+    <img src="./assets/img/plus.png" />
+  </a>
+  <contact-list
+    [contacts]="contacts$ | async"
+    (onSelect)="selectedContactsId = $event"
+    (onDelete)="onDeleteContact($event)"
+  ></contact-list>
+
+  <router-outlet></router-outlet>
+</section>

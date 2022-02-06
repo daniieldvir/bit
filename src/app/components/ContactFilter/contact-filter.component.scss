@@ -1,0 +1,36 @@
+.contact-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 30px;
+
+  label {
+    margin: 10px;
+  }
+  input {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+
+    border: 1px solid rgba(36, 35, 35, 0.626);
+  }
+
+  input[type="text"]::placeholder {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .contact-filter {
+    flex-direction: row;
+
+    label {
+      margin-right: 10px;
+    }
+    input {
+      width: 250px;
+    }
+  }
+}

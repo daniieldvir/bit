@@ -1,0 +1,63 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(29, 28, 28);
+
+  header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkblue;
+    margin-bottom: 30px;
+
+    .logo {
+      color: white;
+      font-size: 17px;
+
+      span {
+        color: lightblue;
+      }
+    }
+
+    nav {
+      display: flex;
+
+      a {
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      a.active {
+        color: rgb(5, 157, 184);
+      }
+    }
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  footer {
+    height: 70px;
+    background-color: rgb(24, 24, 24);
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .app-container {
+    header {
+      .logo {
+        font-size: 25px;
+      }
+    }
+  }
+}
